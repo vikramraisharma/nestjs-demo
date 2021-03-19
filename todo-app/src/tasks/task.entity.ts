@@ -1,16 +1,16 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
-export class Contact {
+export class Task{
     @PrimaryGeneratedColumn()
     id: number;
 
     @Column()
-    firstName: string;
+    taskString: string;
 
     @Column()
-    lastName: string;
+    assigned: Date;
 
     @Column()
-    phone: string;
+    completed: boolean;
 }
